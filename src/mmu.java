@@ -38,13 +38,7 @@ public class mmu {
 
     * */
 
-    public static void main(String Arg[]) {//cli arguments
-        System.out.print("Enter you command as 'Memory typeofAlgorithm' :");
-        Scanner tostart = new Scanner(System.in);
-        String in = tostart.nextLine();
-        String Args[] = in.split(" ");
-        //if you want to  use command line arguments then remove the above
-        // 4 lines and change the arguments of main to (String Args[]) instead of (String Arg[])
+    public static void main(String Args[]) {//cli arguments
         if (Args.length == 2) { //check if there are two arguments eg. mmu 1000 1
             try {   //args[0] = 1000, args[1] = 1
                 double mm = Double.parseDouble(Args[0]);    //entered memory might have floating point
